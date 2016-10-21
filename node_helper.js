@@ -58,6 +58,7 @@ module.exports = NodeHelper.create({
           if (self.config.powerSaving){
             self.activateMonitor();
           }
+          setTimeout(function() {}, 30 * 1000);
          }
         else if (value == 0) {
           self.sendSocketNotification("USER_PRESENCE", false);
